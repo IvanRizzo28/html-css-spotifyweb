@@ -1,0 +1,33 @@
+@import 'variabili.css';
+@import 'common.css';
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+/*
+xs: <=552px
+sm: <=640px
+md: <=878px
+lg: >878px
+*/
+
+/*
+reset
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*------------*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/*----------------*/
+
+.pagina{
+    display: flex;
+}

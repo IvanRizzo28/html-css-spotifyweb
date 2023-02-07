@@ -1,0 +1,148 @@
+header{
+    background-color: var(--color-1);
+    height: calc(100vh - 100px);
+    padding: 20px;
+    position: relative;
+    color: var(--text-color-1);
+}
+
+header span{
+    font-weight: bold;
+}
+
+header .non-visibile-xs{
+    display: none;
+}
+
+.logo{
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.logo-big{
+    max-width: 150px;
+    margin-bottom: var(--margin-medio);
+}
+
+header nav{
+    margin-bottom: var(--margin-medio);
+}
+
+header nav ul li img{
+    width: 30px;
+    vertical-align: middle;
+    /*margin-right: 10px;*/
+}
+
+header ul li span{
+    vertical-align: middle;
+}
+
+.playlist h3{
+    color: var(--text-color-2);
+    font-size: 16px;
+}
+
+.playlist-aggiungi{
+    margin: var(--marging-piccolo) 0 var(--marging-medio-piccolo) 0;
+}
+
+.playlist-aggiungi.testo-hover:hover div{
+    background-color: #fff;
+}
+
+.playlist-aggiungi div{
+    background-color: var(--text-color-1);
+    display: inline-block;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.playlist-aggiungi span{
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.playlist ul{
+    overflow-y: auto;
+}
+
+.playlist ul li{
+    margin-bottom: var(--marging-medio-piccolo);
+}
+
+.profilo{
+    position: absolute;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: var(--color-1);
+}
+
+.profilo img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.profilo .download{
+    margin-right: 5px;
+    width: 25px;
+}
+
+.profilo span{
+    vertical-align: middle;
+    font-size: 16px;   
+}
+
+.profilo .profilo-nome{
+    color: var(--text-color-2);
+}
+
+.profilo hr{
+    margin: 10px 0;
+}
+
+.cerchio{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media screen and (min-width: 640px) {
+    header{
+        width: 300px;
+    }  
+
+    header nav ul li img{
+        margin-right: 10px;
+    }
+    
+    header .non-visibile-xs{
+        display: initial;
+    }
+
+    header .profilo hr{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .cerchio{
+        margin-top: 0;
+    }
+}

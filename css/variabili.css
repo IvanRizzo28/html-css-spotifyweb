@@ -1,0 +1,17 @@
+:root{
+    /*colori sezioni*/
+    --color-1: #000;
+    --color-2: #141922;
+    --color-3: #282828;
+    /*colori testo*/
+    --text-color-1: #656565;
+    --text-color-2: #fff;
+    /*estetica*/
+    --estetica-color-1: #ADFF2F;
+
+    /*margini*/
+    --marging-piccolo: 10px;
+    --marging-medio-piccolo: 20px;
+    --margin-medio: 30px;
+    --margin-grande: 50px;
+}
