@@ -17,14 +17,17 @@
     <div class="pagina">
         <!--header-->
         <header>
-            <img src="img/logo-small.svg" alt="Spotify" class="logo"><img src="img/logo.svg" alt="Spotfy" class="logo-big non-visibile-xs">
-            <nav>
-                <ul>
-                    <li class="testo-hover"><img src="img/home.svg" alt="Spotify"><span class="non-visibile-xs">Home</span></li>
-                    <li class="testo-hover"><img src="img/search.svg" alt="Spotify"><span class="non-visibile-xs">Cerca</span></li>
-                    <li class="testo-hover"><img src="img/libreria.svg" alt="Spotify"><span class="non-visibile-xs">La tua libreria</span></li>
-                </ul>
-            </nav>
+            <div>
+                <img src="img/logo-small.svg" alt="Spotify" class="logo"><img src="img/logo.svg" alt="Spotfy" class="logo-big non-visibile-xs">
+                <nav>
+                    <ul>
+                        <li class="testo-hover cliccato"><img src="img/home.svg" alt="Spotify"><span class="non-visibile-xs">Home</span></li>
+                        <li class="testo-hover"><img src="img/search.svg" alt="Spotify"><span class="non-visibile-xs">Cerca</span></li>
+                        <li class="testo-hover"><img src="img/libreria.svg" alt="Spotify"><span class="non-visibile-xs">La tua libreria</span></li>
+                    </ul>
+                </nav>
+            </div>
+            
             <div class="playlist non-visibile-xs">
                 <h3>PLAYLIST</h3>
                 <div class="playlist-aggiungi testo-hover">
@@ -55,9 +58,148 @@
             </div>
         </header>
         <!--/header-->
+        <!--main-->
         <main>
+            <div class="upgrade flex end">
+                <button>Effettua L'apgrade</button>
+            </div>
+            <div class="content">
+                <div class="menu row">
+                    <span class="testo-hover cliccato">in evidenza</span>
+                    <span class="testo-hover">podcast</span>
+                    <span class="testo-hover">classifiche</span>
+                    <span class="testo-hover">generi e mood</span>
+                    <span class="testo-hover">nuove uscite</span>
+                    <span class="testo-hover">scopri</span>
+                </div>
+                <section>
+                    <h2>Recently played</h2>
+                    <div class="row">
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/metal_lifting.jpg" alt="album1">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Heavy metal</h3>
+                                    <span>Subbie</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/stranger.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Stranger things, vol.1 (a Netflix original series soundtrack)</h3>
+                                    <span>kyle dixon & michael Stenl</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/cure.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Heavy metal</h3>
+                                    <span>Subbie</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/aquietplace.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Heavy metal</h3>
+                                    <span>Subbie</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/split.jpeg" alt="album1">
             
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Heavy metal</h3>
+                                    <span>Subbie</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/sinister.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Heavy metal</h3>
+                                    <span>Subbie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="row">
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/radar.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Release Radar</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina">
+                                    <img src="img/mixdaily.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Daily mix</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="row">
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina artista">
+                                    <img src="img/youg.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>Young</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-container">
+                            <div class="col">
+                                <div class="copertina artista">
+                                    <img src="img/einaudi.jpeg" alt="album1">
+                                </div>
+                                <div class="informazioni">
+                                    <h3>einaudi</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
+        <!--/main-->
     </div>
     <footer>
     

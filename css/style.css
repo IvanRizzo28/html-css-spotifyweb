@@ -23,11 +23,16 @@ reset
 
 body{
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    height: 100vh;
 }
 
 /*----------------*/
 
 .pagina{
     display: flex;
+    height: calc(100% - 100px);
 }
+
+/*
+main
+*/

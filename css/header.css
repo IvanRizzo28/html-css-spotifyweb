@@ -1,9 +1,12 @@
 header{
     background-color: var(--color-1);
-    height: calc(100vh - 100px);
+    /*height: calc(100vh - 100px);*/
     padding: 20px;
-    position: relative;
     color: var(--text-color-1);
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    overflow: hidden;
 }
 
 header span{
@@ -71,6 +74,7 @@ header ul li span{
 
 .playlist ul{
     overflow-y: auto;
+    max-height: 200px;
 }
 
 .playlist ul li{
@@ -78,14 +82,14 @@ header ul li span{
 }
 
 .profilo{
-    position: absolute;
     padding-bottom: 20px;
     padding-top: 5px;
+    background-color: var(--color-1);
+    position: absolute;
     bottom: 0;
     left: 20px;
     right: 20px;
-    z-index: 10;
-    background-color: var(--color-1);
+    z-index: 2;
 }
 
 .profilo img{
@@ -144,5 +148,15 @@ header ul li span{
 
     .cerchio{
         margin-top: 0;
+    }
+
+    header .cliccato::before{
+        position: absolute;
+        background-color: var(--estetica-color-1);
+        content: '';
+        width: 4px;
+        left: -20px;
+        top: 0;
+        bottom: 0;
     }
 }

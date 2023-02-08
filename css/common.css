@@ -11,7 +11,63 @@ a{
     color: inherit;
 }
 
+button{
+    font-family: inherit;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 552px){
+    button{
+        padding: 10px 20px;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.flex.end{
+    justify-content: flex-end;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-container{
+    width: 50%;
+    padding: 5px;
+}
+
+.col{
+    height: 100%;
+}
+
+/*md*/
+@media screen and (min-width: 878px){
+    .col-container{
+        width: 25%;
+    }
+}
+
+/*lg*/
+@media screen and (min-width: 1000px){
+    .col-container{
+        width: calc(100% / 6);
+    }
+}
+
 .testo-hover:hover{
     color: var(--text-color-2);
     cursor: pointer;
+}
+
+.cliccato{
+    position: relative;
 }
