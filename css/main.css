@@ -78,6 +78,9 @@ main section p{
 
 .copertina{
     position: relative;
+}
+
+.copertina img{
     transition: 0.4s;
 }
 
@@ -88,19 +91,20 @@ main section p{
 .copertina i{
     color: var(--text-color-2);
     font-size: 40px;
-}
-
-.copertina:hover{
-    filter: opacity(0.3);
-}
-
-/*.copertina:hover .copertina i{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%,-50%);
+    visibility: collapse;
+}
+
+.copertina:hover img{
+    filter: opacity(0.3);
+}
+
+.copertina:hover i{
     visibility: visible;
-}*/
+}
 
 .copertina img{
     width: 100%;
@@ -113,7 +117,7 @@ main section p{
 
 .informazioni h3{
     font-size: 16px;
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
 }
 
 .informazioni span{

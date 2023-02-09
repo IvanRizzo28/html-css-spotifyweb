@@ -35,6 +35,20 @@ button{
     justify-content: flex-end;
 }
 
+.flex.between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;

@@ -1,28 +1,129 @@
 footer{
     height: 100px;
     background-color: var(--color-3);
-    position: relative;
-    z-index: 2;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--text-color-2);
+    overflow-y: hidden;
 }
 
-.song, .volume{
-    width: 25%;
-}
-
-.song{
-    
+footer > div{
+    height: 100%;
 }
 
 .song img{
     width: 50px;
+    height: 50px;
+    margin-right: 10px;
     display: block;
 }
 
+.song h3{
+    font-size: 16px;
+}
+
+.song span{
+    color: var(--text-color-1);
+    font-size: 14px;
+}
+
+.song .song-title{
+    height: 70%;
+    margin-right: 5px;
+}
+
+.song .song-title div{
+    overflow: hidden;
+    height: 100%;
+    width: 50px;
+}
+
+.song div i{
+    color: var(--text-color-1);
+    display: block;
+}
+
+.song div i:first-child{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
 
 .player{
-    width: 50%;
+    width: 60%;
+}
+
+.player i{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.player .play{
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.player > div{
+    height: 50%;
+}
+
+/*.player div:first-child{
+    justify-content: space-around;
+}*/
+
+.player span{
+    font-size: 12px;
+}
+
+.tempo{
+    width: 80%;
+    height: 5px;
+    background-color: var(--text-color-1);
+    border-radius: 2px;
+    position: relative;
+}
+
+.volume .tempo{
+    width: 60px;
+}
+
+.linea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 30%;
+    background-color: var(--text-color-2);
+}
+
+.linea:hover{
+    background-color: var(--estetica-color-1);
+}
+
+.linea:hover::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--text-color-2);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.volume i{
+    margin:0 8px;
+}
+
+@media screen and (min-width: 640px){
+    .song .song-title div{
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .song div i{
+        display: initial;
+    }
 }

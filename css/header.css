@@ -3,8 +3,6 @@ header{
     /*height: calc(100vh - 100px);*/
     padding: 20px;
     color: var(--text-color-1);
-    position: relative;
-    z-index: 10;
     height: 100%;
     overflow: hidden;
     display: flex;
@@ -159,6 +157,10 @@ header ul li span{
 
     .cerchio{
         margin-top: 0;
+    }
+
+    header .cliccato{
+        color: var(--text-color-2);
     }
 
     header .cliccato::before{
