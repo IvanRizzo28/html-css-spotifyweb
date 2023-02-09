@@ -3,4 +3,26 @@ footer{
     background-color: var(--color-3);
     position: relative;
     z-index: 2;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song, .volume{
+    width: 25%;
+}
+
+.song{
+    
+}
+
+.song img{
+    width: 50px;
+    display: block;
+}
+
+
+.player{
+    width: 50%;
 }
